@@ -17,7 +17,7 @@ loop do
   heat = str.slice(0, 4)
   puts heat
   sleep 1
-  if heat.to_i >= 37.5 then
+  if heat.to_i >= 34.5 then
     client.publish('iot/topic', "#{heat}")
   end
 end
